@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}
+Hello!
+{% endblock title %}
+
+{% block maincontent %}
+    <form action="/register"method="POST">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+        <label for=>Name</label><br>
+        <input type="text" name="nickname" id=""><br>
+        <label for=>Email</label><br>
+        <input type="text" name="email" id=""><br>
+        <label for=>Password</label><br>
+        <input type="text" name="password" id=""><br>
+        <button type="submit">Register</button>
+        <p>You have account? <a href="/login">login</a></p>
+    </form>
+{% endblock maincontent %}
+ 

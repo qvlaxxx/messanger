@@ -19,6 +19,7 @@ Werkzeug==3.1.8
 gunicorn
 flask
 flask-login
+flask-wtf
 bcrypt
 supabase
 gunicorn
